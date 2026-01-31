@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAYMAX</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{
+  background:
+    linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.9)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  color:#fff;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+}
+.container{
+  width:100%;
+  max-width:420px;
+  padding:20px;
+}
+.page{display:none;animation:fade .4s ease}
+.page.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
+
+.card{
+  background:rgba(255,255,255,0.06);
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 0 30px rgba(255,0,0,.35);
+  margin-bottom:15px;
+}
+
+/* LOGO */
+.logo{
+  width:120px;height:120px;
+  border-radius:50%;
+  margin:0 auto 15px;
+  border:4px solid red;
+  box-shadow:0 0 25px red;
+  overflow:hidden;
+}
+.logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+h1{text-align:center;letter-spacing:2px}
+.sub{text-align:center;color:#ff4d4d;margin:8px 0 15px}
+
+/* BUTTON */
+.btn{
+  width:100%;
+  display:block;
+  padding:14px;
+  margin-top:12px;
+  text-align:center;
+  border-radius:14px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 0 15px rgba(255,0,0,.3);
+  transition:.3s;
+}
+.btn:hover{
+  background:red;
+  box-shadow:0 0 30px red;
+}
+.btn.red{background:red}
+.back{background:#222}
+
+/* PRICE CARD */
+.price-card{
+  background:rgba(0,0,0,.6);
+  border-radius:16px;
+  padding:16px;
+  margin-top:14px;
+  box-shadow:0 0 18px rgba(255,0,0,.25);
+}
+.price-card h3{text-align:center}
+.price{
+  text-align:center;
+  font-size:22px;
+  color:#ff2b2b;
+  margin:6px 0;
+}
+.desc{
+  text-align:center;
+  font-size:13px;
+  opacity:.85;
+}
+
+footer{text-align:center;font-size:12px;color:#aaa;margin-top:20px}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- ================= HOME ================= -->
+<div id="home" class="page active">
+  <div class="card">
+    <div class="logo">
+      <img src="https://files.catbox.moe/9r2nwi.jpg" alt="PAYMAX">
+    </div>
+    <h1>PAYMAX</h1>
+    <p class="sub">Verified System • Active 24/7</p>
+
+    <a class="btn" onclick="openPage('panel')">📦 Order Panel PAYMAX</a>
+    <a class="btn red" onclick="openPage('bot')">🤖 Premium Bot Access</a>
+    <a class="btn" href="https://whatsapp.com/channel/0029Vb7oB67CxoAydXFoK822">📢 Saluran</a>
+  </div>
+
+  <footer>© 2026 PAYMAX • Terpercaya</footer>
+</div>
+
+<!-- ================= PANEL ================= -->
+<div id="panel" class="page">
+  <div class="card">
+    <h1>ORDER PANEL</h1>
+    <p class="sub">PAYMAX Hosting</p>
+
+    <div class="price-card"><h3>RAM 1GB</h3><div class="price">Rp1.000</div><div class="desc">CPU 40% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%201GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>RAM 2GB</h3><div class="price">Rp3.000</div><div class="desc">CPU 80% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%202GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>RAM 3GB</h3><div class="price">Rp3.000</div><div class="desc">CPU 120% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%203GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>RAM 4GB</h3><div class="price">Rp4.000</div><div class="desc">CPU 160% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%204GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>RAM 5GB</h3><div class="price">Rp5.000</div><div class="desc">CPU 200% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%205GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>RAM 6GB</h3><div class="price">Rp6.000</div><div class="desc">CPU 240% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%206GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>RAM 7GB</h3><div class="price">Rp7.000</div><div class="desc">CPU 280% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%207GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>RAM 8GB</h3><div class="price">Rp8.000</div><div class="desc">CPU 320% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%208GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>RAM 9GB</h3><div class="price">Rp9.000</div><div class="desc">CPU 360% • Bulanan</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%209GB">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>UNLIMITED</h3><div class="price">Rp10.000</div><div class="desc">Unlimited RAM & CPU</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Panel%20Unlimited">BELI SEKARANG</a></div>
+
+    <a class="btn back" onclick="openPage('home')">⬅ Kembali</a>
+  </div>
+</div>
+
+<!-- ================= BOT ================= -->
+<div id="bot" class="page">
+  <div class="card">
+    <h1>PREMIUM BOT ACCESS</h1>
+    <p class="sub">PAYMAX Bot</p>
+
+    <div class="price-card"><h3>TRIAL ACCESS</h3><div class="price">Rp3.000</div><div class="desc">1 Minggu</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Bot%20Trial">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>STANDARD</h3><div class="price">Rp5.000</div><div class="desc">Basic Access</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Bot%20Standard">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>PREMIUM</h3><div class="price">Rp8.000</div><div class="desc">Full Feature</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Bot%20Premium">BELI SEKARANG</a></div>
+    <div class="price-card"><h3>VVIP ACCESS</h3><div class="price">Rp10.000</div><div class="desc">mycard • Priority</div><a class="btn red" href="https://wa.me/6287898011719?text=Order%20Bot%20VVIP">BELI SEKARANG</a></div>
+
+    <a class="btn back" onclick="openPage('home')">⬅ Kembali</a>
+  </div>
+</div>
+
+</div>
+
+<script>
+function openPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
